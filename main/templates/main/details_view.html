@@ -1,0 +1,24 @@
+
+
+
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    Changing data  {{ table_data.country }}
+{% endblock %}
+
+
+{% block content %}
+<h4>you can change data here</h4>
+    <div class="features">
+        <h1>{{ table_data.country }}</h1>
+        <h1>{{ table_data.city }}</h1>
+        <h1>{{ table_data.population }}</h1>
+        <h1>{{ table_data.short_description }}</h1>
+        <h1>{{ table_data.date }}</h1>
+        <a href="{% url 'update' table_data.id %}" class="btn btn-info">edit</a>
+        <a href="{% url 'delete' table_data.id %}" class="btn btn-danger">delete</a>
+    </div>
+
+
+{% endblock %}

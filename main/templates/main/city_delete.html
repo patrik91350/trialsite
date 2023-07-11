@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    Delete city
+{% endblock %}
+
+
+{% block content %}
+    <h4>Press button below to remove the city</h4>
+
+      <form method="post">
+        {% csrf_token %}
+
+        <button class="btn btn-success" type="submit">Delete</button>
+    </form>
+
+{% endblock %}

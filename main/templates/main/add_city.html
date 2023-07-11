@@ -1,0 +1,23 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    Adding city
+{% endblock %}
+
+
+{% block content %}
+<h1>Add your city</h1>
+
+
+      <form method="post">
+        {% csrf_token %}
+        {{ form.country }}<br>
+        {{ form.city }}<br>
+        {{ form.population }}<br>
+        {{ form.short_description }}<br>
+        {{ form.date }}<br>
+        <span>{{ error }}</span><br>
+        <button class="btn btn-success" type="submit">Добавить</button>
+    </form>
+
+{% endblock %}

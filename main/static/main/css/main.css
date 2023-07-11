@@ -1,0 +1,9 @@
+nav {
+    background: #ea9ffc;
+}
+
+.navbar-brand img {
+    width: 20px;
+    position: relative;
+    top: -3px;
+}
